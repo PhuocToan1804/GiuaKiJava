@@ -74,37 +74,37 @@ public class Student {
     public Element toXmlElement(Document document) {
         Element studentElement = document.createElement("Student");
 
-        // Tạo phần tử Id
+        
         Element idElement = document.createElement("Id");
         idElement.setTextContent(Integer.toString(this.id));
         studentElement.appendChild(idElement);
 
-        // Tạo phần tử Name
+        
         Element nameElement = document.createElement("Name");
         nameElement.setTextContent(this.name);
         studentElement.appendChild(nameElement);
 
-        // Tạo phần tử Address
+       
         Element addressElement = document.createElement("Address");
         addressElement.setTextContent(this.address);
         studentElement.appendChild(addressElement);
 
-        // Tạo phần tử Age
+      
         Element ageElement = document.createElement("Age");
         ageElement.setTextContent(Integer.toString(this.age));
         studentElement.appendChild(ageElement);
 
-        // Tạo phần tử Sum
+       
         Element sumElement = document.createElement("Sum");
         sumElement.setTextContent(Integer.toString(calculateSumOfDigits(this.dateOfBirth)));
         studentElement.appendChild(sumElement);
 
-        // Tạo phần tử IsPrime
+        
         Element isPrimeElement = document.createElement("IsPrime");
         isPrimeElement.setTextContent(Boolean.toString(this.isPrime));
         studentElement.appendChild(isPrimeElement);
 
-        // Tạo phần tử EncodedAge
+        
         Element encodedAgeElement = document.createElement("EncodedAge");
         encodedAgeElement.setTextContent(this.encodedAge);
         studentElement.appendChild(encodedAgeElement);
